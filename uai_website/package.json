@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
+    "build:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt build",
     "start": "nuxt start",
-    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
+    "generate:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate",
     "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
     "lint": "yarn lint:js",
     "lintfix": "yarn lint:js --fix"
@@ -26,6 +26,7 @@
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^8.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
+    "cross-env": "^7.0.3",
     "eslint": "^8.4.1",
     "eslint-plugin-nuxt": "^3.1.0",
     "eslint-plugin-vue": "^8.2.0"
