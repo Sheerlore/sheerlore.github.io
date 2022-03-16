@@ -1,14 +1,7 @@
 <template>
   <div>
     <h1>Index</h1>
-    <nuxt-link to="/about">About Page</nuxt-link>
-    <p>
-      This page is rendered on the <strong>{{ rendering }}</strong>
-    </p>
-    <p v-if="rendering === 'server'">
-      First load or hard refresh is done on server side.
-    </p>
-    <p v-if="rendering === 'client'">Navigation is done on client side.</p>
+    {{ rendering }}
   </div>
 </template>
 
