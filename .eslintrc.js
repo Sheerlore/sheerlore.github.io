@@ -13,6 +13,7 @@ module.exports = {
   // add your custom rules here
   rules: {
     'space-before-function-paren': ['error', 'never'],
-    'comma-dangle': ['error', 'never']
+    'comma-dangle': ['error', 'never'],
+    'unicorn/number-literal-case': 'off'
   }
 }
