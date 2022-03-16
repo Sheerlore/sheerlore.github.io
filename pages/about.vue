@@ -1,7 +1,6 @@
 <template>
   <div>
-    <h1>Index</h1>
-    <nuxt-link to="/about">About Page</nuxt-link>
+    <h1>about</h1>
     <p>
       This page is rendered on the <strong>{{ rendering }}</strong>
     </p>
@@ -14,7 +13,7 @@
 
 <script>
 export default {
-  name: 'IndexPage',
+  name: 'AboutPage',
   asyncData() {
     return {
       rendering: process.server ? 'server' : 'client'
