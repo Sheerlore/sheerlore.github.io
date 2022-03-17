@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>リダイレクト</title>
-  <script>
-    setTimeout('link()', 0)
-    function link() {
-      location.href = 'https://sheerlore.github.io/rabbit'
-    }
-  </script>
-</head>
-<body>
-  <h1>リダイレクトします</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>リダイレクト</title>
+    <script>
+      setTimeout('redirect()', 0)
+      function redirect() {
+        window.location.href = '/rabbit'
+      }
+    </script>
+  </head>
+  <body>
+    <h1>自動で遷移します しない場合は直接次のリンクを踏んでください</h1>
+    <a href="https://sheerlore.github.io/rabbit"></a>
+  </body>
 </html>
