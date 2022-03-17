@@ -25,7 +25,6 @@ export default {
     {
       src: '~/plugins/pixi.js',
       ssr: false
-      // mode: 'client',
     }
   ],
 
@@ -53,5 +52,8 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {},
+  router: {
+    base: '/'
+  }
 }
